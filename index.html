@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Formulário de Contatos</title>
+</head>
+<body>
+
+  <h2>Formulário de Contatos</h2>
+
+  <form id="contactForm">
+    <label for="name">Nome:</label>
+    <input placeholder="Insira aqui." type="text" id="name" name="name" required>
+
+    <label for="phone">Telefone:</label>
+    <input placeholder="Insira aqui." type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+    
+    <button type="button" onclick="addContact()">Cadastrar</button>
+  </form>
+
+  <table id="contactsTable">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- As linhas da tabela serão adicionadas dinamicamente aqui -->
+    </tbody>
+  </table>
+<script src="main.js"></script>
+</body>
+</html>
